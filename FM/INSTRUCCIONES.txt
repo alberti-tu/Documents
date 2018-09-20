@@ -1,0 +1,10 @@
+
+Para transmitir un fichero WAV
+
+sudo ./fm_transmitter -f [frequency] -r [filename]
+
+
+
+Para transmitir desde un Microfono USB
+
+arecord -D hw:1,0 -c1 -d 0 -r 22050 -f S16_LE | sudo ./fm_transmitter -f [frequency] -
